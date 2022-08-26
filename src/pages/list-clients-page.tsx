@@ -1,4 +1,4 @@
-import { ListClients } from "../components/list-clients"
+import { ListClients } from "../components/list-clients/list-clients"
 
 export const ListClientsPage = () =>{
     return (
