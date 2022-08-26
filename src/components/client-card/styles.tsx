@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { fAlignCenter, fDirCol, fDirRow, flexContainer, fSpaceBet } from "../../styles/general";
+import { fAlignCenter, fDirCol, fDirRow, flexContainer, flexWrap, fSpaceBet } from "../../styles/general";
 import { css } from '@emotion/react'
 export const CardContainer = styled('div')`
     ${flexContainer};
@@ -19,9 +19,11 @@ const basicContainer = css`
 `
 export const RowContainer = styled('div')`
     ${flexContainer};
+    ${flexWrap};
     ${fDirRow};
     ${fSpaceBet};
-    ${fAlignCenter}
+    ${fAlignCenter};
+    gap: 0.5rem;
 `
 export const ElementContainer = styled('div')`
     ${basicContainer};
