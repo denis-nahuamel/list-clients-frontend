@@ -1,15 +1,15 @@
 
 import { useEffect, useState } from "react"
 import { getClients } from "../../services/client.service"
-import { ClientCard } from "../client-card/client-card"
+import { ClientCard } from "../client-card"
 import { IClient } from "../../models/client.interface";
-import { ClientContainer } from './list-clients.style';
+import { ClientContainer } from './styles';
 
 export const ListClients = () => {
   const [clients, setClients] = useState<[] | IClient[]>([]);
 
   useEffect(() => {
-    getClients().then(response => setClients(response))
+    getClients().then(data => setClients(data))
   }, [])
   
   return (

@@ -1,5 +1,5 @@
-import { ListClients } from "../../components/list-clients/list-clients"
-import { TitleContainer } from "./list-clients-page.style"
+import { ListClients } from "../../components/list-clients"
+import { TitleContainer } from "./styles"
 
 export const ListClientsPage = () =>{
     return (
