@@ -7,7 +7,7 @@ export interface IClient {
     tipo:string;
     estado:EEstado;
 }
-enum EEstado {
-    "ACTIVO",
-    "INACTIVO"
+export enum EEstado {
+    "ACTIVO" = 1,
+    "INACTIVO"= 2
 }
